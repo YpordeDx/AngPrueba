@@ -1,27 +1,15 @@
-# AngularProj
+- Aplicacion de Angular 7 con estilos ROUTING
+- 2 Paginas CON ANGULAR ROUTING, una que tenga por URL /login y otra /users
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+-En /login deben haber 2 inputs, uno para password y otro para email y cuando doy click en un boton "Login" debe hacer lo siguiente:
+	1- Enviar esos parametros a ########### por medio de un POST
+	2- De la respuesta coger el token y guardarlo en LOCAL STORAGE
+	3- redirigirme a la pagina /users CON ANGULAR ROUTING
+- en /users debe haber una lista de usuarios que seran consultados en: ############ por medio de un GET
+	1- se debe usar NGFOR
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+*Criterios Generales:
+- Usar Bootstrap 4
+- Tener TODO con modelos de datos en una carpeta llamada modelos... NO PUEDE haber en ningun lado parametros de tipo "any"
+- Debe haber una carpeta llamada servicio en donde se declararan las llamadas al servidor.
