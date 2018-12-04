@@ -1,24 +1,25 @@
-import { Component, OnInit } from  '@angular/core';
-import { APIService } from  '../servicio/api.service';
-import {Router} from "@angular/router"
+import { Component, OnInit } from '@angular/core';
+import { APIService } from '../servicio/api.service';
+import {Router} from '@angular/router';
+import {ResponseModel} from '../modelos/ResponseModel';
+
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })
 export  class  UsersComponent  implements  OnInit {
-private  users:  Array<object> = [];
+private  responseMesagge:  ResponseModel;
   constructor(private router: Router, private  apiService:  APIService) { }
-  ngOnInit() {
-      this.getUsers();
+  ngOnInit(): void {
+    this.getResponseUsers();
   }
-    salir()
-    {
-      this.router.navigate(['/login'])
-    }
-  public  getUsers(){
-    this.apiService.getUsers().subscribe((data:  Array<object>) => {
-          this.users  =  data;
-      });
+  logOut(): void {
+    this.router.navigate(['/login']);
+  }
+  public  getResponseUsers(): void {
+    this.apiService.getResponseModel().subscribe((data: ResponseModel) => {
+      this.responseMesagge  =  data;
+    });
   }
 }
