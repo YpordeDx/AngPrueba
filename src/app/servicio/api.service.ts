@@ -6,7 +6,7 @@ import { LoginModel } from '../modelos/LoginModel';
 import { ResponseModel } from '../modelos/ResponseModel';
 
 @Injectable({
-    providedIn:  'root'
+    providedIn: 'root'
 })
 
 export  class  APIService {

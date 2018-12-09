@@ -8,12 +8,14 @@ import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
 import {NgxWebstorageModule} from 'ngx-webstorage';
 import { FormsModule } from '@angular/forms';
+import { DetalleComponent } from './detalle/detalle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UsersComponent
+    UsersComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
